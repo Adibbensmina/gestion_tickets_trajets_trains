@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="inscription" prefHeight="446.0" prefWidth="817.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication14.InscriptionController">
+   <children>
+      <VBox prefHeight="463.0" prefWidth="137.0" style="-fx-background-color: cyan;">
+         <children>
+            <FontAwesomeIconView fill="#fff4f4" glyphName="ARROW_LEFT" onMouseClicked="#retour_du_menu" size="26.0" text="" wrappingWidth="41.0" />
+         </children></VBox>
+      <ImageView fitHeight="396.0" fitWidth="682.0" layoutX="134.0" layoutY="55.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/admin.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nom" focusColor="#41a6a2" labelFloat="true" layoutX="360.0" layoutY="88.0" promptText="Nom" unFocusColor="#fffbfb">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="prenom" focusColor="#409da8" labelFloat="true" layoutX="360.0" layoutY="150.0" prefHeight="29.0" prefWidth="193.0" promptText="Prenom" unFocusColor="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#409aa8" labelFloat="true" layoutX="358.0" layoutY="219.0" prefHeight="33.0" prefWidth="193.0" promptText="email" unFocusColor="#ebebeb">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pass" focusColor="#40a1a8" labelFloat="true" layoutX="358.0" layoutY="292.0" prefHeight="33.0" prefWidth="181.0" promptText="mot de passe" unFocusColor="#fffafa">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="373.0" layoutY="359.0" onMouseClicked="#inscription" prefHeight="37.0" prefWidth="151.0" ripplerFill="#339c68" style="-fx-background-color: cyan; -fx-background-radius: 90;" text="inscription" textFill="#3c3333">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="401.0" layoutY="25.0" prefHeight="27.0" prefWidth="181.0" text="Créer votre compte" textFill="#339490">
+         <effect>
+            <Glow level="0.76" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

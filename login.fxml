@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="loginPane" prefHeight="432.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication14.utilisateur">
+   <children>
+      <AnchorPane layoutX="355.0" prefHeight="439.0" prefWidth="281.0" style="-fx-background-color: black;">
+         <children>
+            <JFXTextField fx:id="text" focusColor="#04d01f" labelFloat="true" layoutX="47.0" layoutY="143.0" prefHeight="29.0" prefWidth="163.0" promptText="prenom" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="co" buttonType="RAISED" layoutX="64.0" layoutY="246.0" onMouseClicked="#connecter" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #2a932a; -fx-background-radius: 30;" text="se connecter" textFill="#1e1e1d">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#589750" />
+               </effect>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="304.0" onAction="#admin_login" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #2a932a; -fx-background-radius: 30;" text="admin login" textFill="#282727">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#5a9759" />
+               </effect>
+            </JFXButton>
+            <Label layoutX="29.0" layoutY="380.0" prefHeight="17.0" prefWidth="155.0" text="vous n'avez pas de compte ?" textFill="#fcf9f9" />
+            <Label fx:id="label1" layoutX="188.0" layoutY="378.0" onMouseClicked="#inscrire" text="S'inscrire" textFill="#4f0dff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#574646" spread="0.2" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXPasswordField fx:id="password" focusColor="#43b53b" labelFloat="true" layoutX="47.0" layoutY="197.0" prefHeight="33.0" prefWidth="163.0" promptText="password" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <Pane layoutX="61.0" layoutY="101.0" prefHeight="5.0" prefWidth="145.0" style="-fx-background-color: #2a932a;">
+               <effect>
+                  <DropShadow color="#477946" spread="0.55" />
+               </effect>
+            </Pane>
+            <FontAwesomeIconView fill="#662d60" glyphName="USERS" layoutX="92.0" layoutY="76.0" size="72.0" wrappingWidth="29.857142448425293" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-8.0" layoutY="-4.0" prefHeight="443.0" prefWidth="364.0" styleClass="login_bg" stylesheets="@gestion_ticket.css" />
+   </children>
+</AnchorPane>

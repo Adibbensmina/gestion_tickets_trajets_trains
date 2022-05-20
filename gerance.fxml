@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="922.0" styleClass="bgadmin" stylesheets="@gestion_ticket.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication14.Gerance">
+   <children>
+      <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#ajout_train" style="-fx-background-color: cyan;" text="ajout_train" textFill="#363131" />
+      <TableView fx:id="table" layoutX="461.0" layoutY="15.0" prefHeight="352.0" prefWidth="655.0" styleClass="tabadmin" stylesheets="@gestion_ticket.css">
+        <columns>
+          <TableColumn fx:id="nom1" prefWidth="75.0" text="Nom_train" />
+          <TableColumn fx:id="source1" prefWidth="75.0" text="Source" />
+            <TableColumn fx:id="des1" prefWidth="88.0" text="Destination" />
+            <TableColumn fx:id="prix1" prefWidth="62.0" text="prix" />
+            <TableColumn fx:id="depart1" prefWidth="104.0" text="temps_depart" />
+            <TableColumn fx:id="arrive1" prefWidth="118.0" text="temps_arrivee" />
+            <TableColumn fx:id="date1" prefWidth="131.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="126.0" layoutY="359.0" mnemonicParsing="false" onAction="#annuler" style="-fx-background-color: cyan;" text="annuler" />
+      <Button layoutX="212.0" layoutY="359.0" mnemonicParsing="false" onAction="#voir_trains" style="-fx-background-color: cyan;" text="voir_trajets" />
+      <Label layoutX="12.0" layoutY="52.0" text="Nom_train" textFill="#f2f2f2" />
+      <Label layoutX="11.0" layoutY="92.0" text="Source" textFill="#ebeaea" />
+      <Label layoutX="11.0" layoutY="131.0" text="Destination" textFill="#eee7e7" />
+      <Label layoutX="11.0" layoutY="175.0" text="prix" textFill="#f5efef" />
+      <Label layoutX="11.0" layoutY="215.0" text="temps_depart" textFill="#f2efef" />
+      <Label layoutX="11.0" layoutY="258.0" text="temps_arrivee" textFill="#f5f3f3" />
+      <Label layoutX="11.0" layoutY="301.0" text="Date" textFill="#ebebeb" />
+      <TextField fx:id="nom" layoutX="118.0" layoutY="47.0" />
+      <TextField fx:id="source" layoutX="132.0" layoutY="87.0" />
+      <TextField fx:id="des" layoutX="118.0" layoutY="126.0" />
+      <TextField fx:id="prix" layoutX="142.0" layoutY="170.0" />
+      <TextField fx:id="depart" layoutX="142.0" layoutY="210.0" />
+      <TextField fx:id="arrive" layoutX="142.0" layoutY="253.0" />
+      <DatePicker fx:id="date" layoutX="117.0" layoutY="296.0" />
+      <Button layoutX="320.0" layoutY="359.0" mnemonicParsing="false" onAction="#supprimer_train" style="-fx-background-color: cyan;" text="suppression_train" />
+      <Label layoutX="307.0" layoutY="215.0" text="Ex:12:00:00" textFill="#8d7777" />
+      <Label layoutX="317.0" layoutY="258.0" text="Ex:12:00:00" textFill="#947974" />
+      <FontAwesomeIconView glyphName="ARROW_LEFT" layoutY="25.0" onMouseClicked="#retour" size="32.0" />
+   </children>
+</AnchorPane>
